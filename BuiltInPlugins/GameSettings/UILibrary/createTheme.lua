@@ -33,6 +33,7 @@ return function(style, overrides)
 	local checkBox = {
 		font = style.font,
 
+		--TODO: Move texture to StudioSharedUI
 		backgroundImage = "rbxasset://textures/GameSettings/UncheckedBox.png",
 		selectedImage = "rbxasset://textures/GameSettings/CheckedBoxLight.png",
 
@@ -41,12 +42,14 @@ return function(style, overrides)
 	}
 
 	local roundFrame = {
+		--TODO: Move texture to StudioSharedUI
 		backgroundImage = "rbxasset://textures/StudioToolbox/RoundedBackground.png",
 		borderImage = "rbxasset://textures/StudioToolbox/RoundedBorder.png",
 		slice = Rect.new(3, 3, 13, 13),
 	}
 
 	local dropShadow = {
+		--TODO: Move texture to StudioSharedUI
 		image = "rbxasset://textures/StudioUIEditor/resizeHandleDropShadow.png",
 	}
 
@@ -82,6 +85,7 @@ return function(style, overrides)
 	}
 
 	local scrollingFrame = {
+		--TODO: Move texture to StudioSharedUI
 		topImage = "rbxasset://textures/StudioToolbox/ScrollBarTop.png",
 		midImage = "rbxasset://textures/StudioToolbox/ScrollBarMiddle.png",
 		bottomImage = "rbxasset://textures/StudioToolbox/ScrollBarBottom.png",
@@ -92,6 +96,7 @@ return function(style, overrides)
 
 	local dropdownMenu = {
 		borderColor = style.borderColor,
+		--TODO: Move texture to StudioSharedUI
 		borderImage = "rbxasset://textures/StudioToolbox/RoundedBorder.png",
 	}
 
@@ -102,6 +107,7 @@ return function(style, overrides)
 		borderColor = style.borderColor,
 		textColor = style.textColor,
 
+		--TODO: Move texture to StudioSharedUI
 		arrowImage = "rbxasset://textures/StudioToolbox/ArrowDownIconWhite.png",
 
 		hovered = {
@@ -111,6 +117,31 @@ return function(style, overrides)
 
 		selected = {
 			backgroundColor = style.selectionColor,
+			borderColor = style.selectionBorderColor,
+			textColor = style.selectedTextColor,
+		},
+	}
+
+	local detailedDropdown = {
+		font = style.font,
+
+		backgroundColor = style.backgroundColor,
+		disabled = style.disabledColor,
+		borderColor = style.borderColor,
+		displayText = style.textColor,
+		descriptionText = style.subTextColor,
+
+		--TODO: Move texture to StudioSharedUI
+		arrowImage = "rbxasset://textures/StudioToolbox/ArrowDownIconWhite.png",
+
+		hovered = {
+			backgroundColor = style.hoveredItemColor,
+			displayText = style.hoveredTextColor,
+		},
+
+		selected = {
+			backgroundColor = style.selectionColor,
+			disabled = style.disabledColor,
 			borderColor = style.selectionBorderColor,
 			textColor = style.selectedTextColor,
 		},
@@ -151,6 +182,7 @@ return function(style, overrides)
 		 scrollingFrame = scrollingFrame,
 		 dropdownMenu = dropdownMenu,
 		 styledDropdown = styledDropdown,
+		 detailedDropdown = detailedDropdown,
 		 titledFrame = titledFrame,
 		 textBox = textBox,
 		 textButton = textButton,

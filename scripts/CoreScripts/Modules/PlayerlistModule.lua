@@ -975,7 +975,7 @@ local function onEntryFrameSelected(selectedFrame, selectedPlayer)
     return
   end
 
-  if selectedPlayer ~= Player and selectedPlayer.UserId > 0 and Player.UserId > 0 then
+  if playerDropDown:HasOptions(selectedPlayer) then
     if LastSelectedFrame ~= selectedFrame then
       if LastSelectedFrame then
         for _,childFrame in pairs(LastSelectedFrame:GetChildren()) do
