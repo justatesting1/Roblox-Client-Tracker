@@ -73,15 +73,15 @@ return function(style, overrides)
 		},
 	}
 
-    local timelineTick = {
-        font = style.font,
+	local timelineTick = {
+		font = style.font,
 
-        lineColor = style.separationLineColor,
-        textColor = style.dimmerTextColor,
-    }
+		lineColor = style.separationLineColor,
+		textColor = style.dimmerTextColor,
+	}
 
-    local timeline = {
-    	barColor = style.borderColor,
+	local timeline = {
+		barColor = style.borderColor,
 	}
 
 	local scrollingFrame = {
@@ -171,21 +171,64 @@ return function(style, overrides)
 		lineColor = style.borderColor,
 	}
 
+	local dialog = {
+		font = style.font,
+
+		background = style.backgroundColor,
+		textColor = style.textColor,
+	}
+
+	local button = {
+		Default = {
+			font = style.font,
+
+			backgroundColor = style.itemColor,
+			textColor = style.textColor,
+			borderColor = style.borderColor,
+
+			hovered = {
+				font = style.font,
+
+				backgroundColor = style.hoveredItemColor,
+				textColor = style.hoveredTextColor,
+				borderColor = style.borderColor,
+			},
+		},
+
+		Primary = {
+			font = style.font,
+
+			backgroundColor = style.primaryItemColor,
+			textColor = style.primaryTextColor,
+			borderColor = style.primaryBorderColor,
+
+			hovered = {
+				font = style.font,
+
+				backgroundColor = style.primaryHoveredItemColor,
+				textColor = style.primaryHoveredTextColor,
+				borderColor = style.primaryHoveredBorderColor,
+			},
+		},
+	}
+
 	return replaceDefaults({
-		 checkBox = checkBox,
-		 roundFrame = roundFrame,
-		 dropShadow = dropShadow,
-		 tooltip = tooltip,
-		 keyframe = keyframe,
-         timelineTick = timelineTick,
-         timeline = timeline,
-		 scrollingFrame = scrollingFrame,
-		 dropdownMenu = dropdownMenu,
-		 styledDropdown = styledDropdown,
-		 detailedDropdown = detailedDropdown,
-		 titledFrame = titledFrame,
-		 textBox = textBox,
-		 textButton = textButton,
-		 separator = separator,
+		checkBox = checkBox,
+		roundFrame = roundFrame,
+		dropShadow = dropShadow,
+		tooltip = tooltip,
+		keyframe = keyframe,
+		timelineTick = timelineTick,
+		timeline = timeline,
+		scrollingFrame = scrollingFrame,
+		dropdownMenu = dropdownMenu,
+		styledDropdown = styledDropdown,
+		detailedDropdown = detailedDropdown,
+		titledFrame = titledFrame,
+		textBox = textBox,
+		textButton = textButton,
+		separator = separator,
+		dialog = dialog,
+		button = button,
 	}, overrides)
 end

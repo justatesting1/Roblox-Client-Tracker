@@ -5553,6 +5553,7 @@ DebugLocalRccServerConnection
 DebugLogAvatarLoadTimeStatsByPlace
 DebugMarkerSetObjectNameEXT
 DebugMarkerSetObjectTagEXT
+DebugMassPackageUpdaterSimulateSleep
 DebugMassPackageUpdaterSimulateSlowOperations
 DebugMechanismInterpolationWorldSpace
 DebugMessageCallbackARB
@@ -14212,7 +14213,6 @@ RenderHint
 RenderHints
 RenderHooksService
 RenderHooksServicePROP
-RenderImageFormatMsgEnabled
 RenderingOnTopWithDepthEnabled
 RenderingTest
 RenderingTestComparisonMethod
@@ -16377,6 +16377,7 @@ StudioDisableAutoUpdateOnRevertToVersionPackage
 StudioDisableLocTableUnpublished
 StudioDisableTabOnClose
 StudioDoNotEndBlockForFunctionArgs
+StudioDontCloseOnTCReconnectDialogExit
 StudioDontRefreshRGEOnPackagePublish
 StudioEnableArchiveGamesAnalytics
 StudioEnableAutoUpdateBetaFeature
