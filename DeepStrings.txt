@@ -977,6 +977,7 @@ AvatarEditorCatalogRecommended
 AvatarEditorCostumeSignalR
 AvatarEditorCurrentlyWearingPersistenceLogic
 AvatarEditorDefaultTabSelection
+AvatarEditorEmotesAnalytics
 AvatarEditorEmotesSupport
 AvatarEditorEnableThemes2
 AvatarEditorFixCostumeScrolling
@@ -4792,6 +4793,7 @@ CorePackages
 CoreScript
 CorescriptACMAddCircularDivider
 CoreScriptACMThemeCustomization
+CoreScriptEmotesMenuAnalytics
 CoreScriptEmotesMenuEnabled
 CoreScriptEnableInspectAndBuy
 CoreScriptFasterCreate
@@ -7700,6 +7702,7 @@ GetBoundCoreActionInfo
 GetBoundingBox
 GetBreakpoints
 GetBrickCount
+GetBrowserTrackerId
 GetBufferMemoryRequirements
 GetBufferMemoryRequirements2
 GetBufferMemoryRequirements2KHR
@@ -16527,7 +16530,6 @@ StudioRenameLocalAssetToFile
 StudioReport64bitTagForCrashDumpAttributeFile
 StudioReportAllApplicationLocationsOnCrash
 StudioReportLoginInternalServerError
-StudioReportOSArchToGoogleAnalytics
 StudioReportPublishToDifferentGame
 StudioResendDisconnectNotificationInterval
 StudioResizeActingPrettyWhackYoLetUsFixThatWeirdRotatedCtrlResi
@@ -16578,7 +16580,6 @@ StudioStyleGuideColor
 StudioStyleGuideModifier
 StudioSuccessCloseDialogInMs
 StudioSyntaxCheckTimerInterval
-StudioTeamCreateConnectionCancellable
 StudioTeamCreateDisconnectHandlingMaximumRetries
 StudioTeamCreateEnableKey
 StudioTeamCreateHelpUrl
@@ -16600,6 +16601,7 @@ StudioTranslatorObject
 StudioTreeWidgetEventProcessingTime
 StudioTreeWidgetFilterTime
 StudioTreeWidgetProcessingTime
+StudioTrustsPlayersImmediately
 StudioTutorialIcon
 StudioTutorialsDevHubUrl
 StudioTutorialSeeAll

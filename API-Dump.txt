@@ -2643,6 +2643,7 @@ Class Stats : Instance [NotCreatable] [Service]
 	Property float Stats.PhysicsSendKbps  [ReadOnly] [NotReplicated]
 	Property float Stats.PhysicsStepTimeMs  [ReadOnly] [NotReplicated]
 	Property int Stats.PrimitivesCount  [ReadOnly] [NotReplicated]
+	Function string Stats:GetBrowserTrackerId() {RobloxScriptSecurity}
 	Function float Stats:GetMemoryUsageMbForTag(Enum<DeveloperMemoryTag> tag)
 	Function Dictionary Stats:GetPaginatedMemoryByTexture(Enum<TextureQueryType> queryType, int pageIndex, int pageSize) {RobloxScriptSecurity} [Yields]
 	Function float Stats:GetTotalMemoryUsageMb()

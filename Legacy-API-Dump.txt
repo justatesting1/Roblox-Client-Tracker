@@ -2605,6 +2605,7 @@ Class Stats : Instance
 	Property float Stats.PhysicsSendKbps [readonly]
 	Property float Stats.PhysicsStepTimeMs [readonly]
 	Property int Stats.PrimitivesCount [readonly]
+	Function string Stats:GetBrowserTrackerId() [RobloxScriptSecurity]
 	Function float Stats:GetMemoryUsageMbForTag(DeveloperMemoryTag tag)
 	Function float Stats:GetTotalMemoryUsageMb()
 	YieldFunction Dictionary Stats:GetPaginatedMemoryByTexture(TextureQueryType queryType, int pageIndex, int pageSize) [RobloxScriptSecurity]

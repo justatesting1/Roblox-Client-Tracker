@@ -45712,6 +45712,17 @@
                 },
                 {
                     "MemberType": "Function",
+                    "Name": "GetBrowserTrackerId",
+                    "Parameters": [
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "string"
+                    },
+                    "Security": "RobloxScriptSecurity"
+                },
+                {
+                    "MemberType": "Function",
                     "Name": "GetMemoryUsageMbForTag",
                     "Parameters": [
                         {
