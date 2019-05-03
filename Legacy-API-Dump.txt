@@ -558,6 +558,7 @@ Class ControllerService : Instance [notCreatable]
 Class CookiesService : Instance
 Class CorePackages : Instance [notCreatable]
 Class CoreScriptSyncService : Instance [notCreatable]
+	Function string CoreScriptSyncService:GetScriptFilePath(Instance script) [RobloxScriptSecurity]
 Class CustomEvent : Instance [deprecated]
 	Function Objects CustomEvent:GetAttachedReceivers()
 	Function void CustomEvent:SetValue(float newValue)

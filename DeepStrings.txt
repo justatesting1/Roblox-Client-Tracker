@@ -161,6 +161,7 @@ AddMaterial
 AddMinStreamRadiusToReplicatorStats
 AddNewAction
 AddNewPlace
+AddOSToPlayerInfoTable
 AddRemoveAndModifyTerrain
 AddRequestAssetVersionPage
 AddressBar
@@ -3188,7 +3189,6 @@ BCFB4807B1F11E4A86BBBBE005A3BAD
 BCFB4817B1F11E4A86BBBBE005A3BAD
 BCFB4827B1F11E4A86BBBBE005A3BAD
 BConnection
-BConversationDistance
 BDontMoveWhenAnchored
 BE20681180838E23F0DC6224
 BE42889BE20681180838E23F0DC6224
@@ -3437,6 +3437,7 @@ BrowserTrackerIdFromJson
 BrowserWindowClosed
 BrowserWindowWillNavigate
 BrushStyle
+BStudioPreventMeshPublishOnErrorEnabled
 BU_Simplex1to4
 BubbleChat
 BubbleChatEnabled
@@ -4717,6 +4718,7 @@ ControlRect
 ControlsCentering
 ControlScript
 ControlType
+ConversationDistance
 ConversationFetch
 ConversationId
 ConversationModel
@@ -6580,6 +6582,7 @@ EndFontMetrics
 EndFrameTrackingI3D
 EndKernData
 EndKernPairs
+EndKeyboardEventsOnFocusChange
 EndpointType
 ENDPROPERTIES
 EndRecording
@@ -7474,6 +7477,8 @@ GameHeartbeat
 GameIconsByGameId
 GameIconsStore
 GameImagePlaceHolder
+GameImagePlaceHolder60
+GameImagePlaceHolder80
 GameIntlApiThrottleHundredthPct
 GameInvitePromptClosed
 GameJoinApiResponse
@@ -8074,6 +8079,7 @@ GetSafeZoneOffsets
 GetScaleFactor
 GetScheduledNotifications
 GetScreenResolution
+GetScriptFilePath
 GetSecondaryAxis
 GetSecondDouble
 GetSelectedRibbonTool
@@ -8278,6 +8284,7 @@ GoToScriptError
 GoToSourceCode
 GoToSourceCodeTB
 GoToVersionFailed
+GpResetMouseDeltaFix
 GrabCursor
 GrabRotateCursor
 GradientEditor
@@ -10017,7 +10024,7 @@ LuaChatOnlyMarkUnreadWhenChatIsFocused
 LuaChatPressEnterToSend
 LuaChatRemoveOldRoactRoduxConnect
 LuaChatResizeUserChatBubbleModerationError
-LuaChatScreenManagerAlwaysUpdatesWithDefaultsV365
+LuaChatScreenManagerAlwaysUpdatesWithDefaultsV384
 LuaChatScreenManagerResumeAndPauseAfterNavigation
 LuaChatSharedGameListFrameHeightCleanup
 LuaChatShareGameBottomBarOverride
@@ -12528,6 +12535,7 @@ PlacePageUrl
 PlacePercentDynamicAssemblies
 PlacePrimitives
 PlacePublished
+PlaceSavedToCloud
 PlaceSaveMessagePage
 PlaceSessionConfigWithStream
 PlaceSessionDataLoaded
@@ -12934,6 +12942,7 @@ PublishCSGFailure
 PublishedGamesPageController
 PublishedGamesPageModel
 PublishedGamesStore
+PublishedNewSlot
 PublishedOn
 PublishedPackageRootObject
 PublishedProjectsPageHeight
@@ -13935,6 +13944,7 @@ ReadMarker
 ReadVoxels
 ReadyDatagram
 RealisticShoulder
+RealtimeFriendsContextualMenuRefactor
 RealtimePhysicsFPS_
 RebalanceTeams
 RecalculateAbsolutePlacementFix
@@ -14464,7 +14474,6 @@ ResetFrameCountNV
 ResetKeyboardMode
 ResetModel
 ResetModfiedStatus
-ResetMouseDeltaFix
 ResetNetworkFloorAfterNoFloorTenthSeconds
 ResetOnboardingCompleted
 ResetOnSpawn
@@ -16492,7 +16501,6 @@ StudioPlaySolo
 StudioPlaySoloGuestCharacterAppearance
 StudioPluginHost
 StudioPluginUseFilename
-StudioPreventMeshPublishOnErrorEnabled
 StudioPreviousStartup
 StudioPublishPlace
 StudioPublishPlaceAs
