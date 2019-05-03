@@ -21,7 +21,7 @@ Class Instance : <<<ROOT>>> [NotCreatable] [NotBrowsable]
 	Function Array Instance:GetDescendants() [CustomLuaState]
 	Function string Instance:GetFullName()
 	Function RBXScriptSignal Instance:GetPropertyChangedSignal(string property)
-	Function bool Instance:IsA(string className)
+	Function bool Instance:IsA(string className) [CustomLuaState]
 	Function bool Instance:IsAncestorOf(Instance descendant)
 	Function bool Instance:IsDescendantOf(Instance ancestor)
 	Function void Instance:Remove() [Deprecated]
@@ -31,7 +31,7 @@ Class Instance : <<<ROOT>>> [NotCreatable] [NotBrowsable]
 	Function void Instance:destroy() [Deprecated]
 	Function Instance Instance:findFirstChild(string name, bool recursive = false) [Deprecated]
 	Function Objects Instance:getChildren() [Deprecated]
-	Function bool Instance:isA(string className) [Deprecated]
+	Function bool Instance:isA(string className) [Deprecated] [CustomLuaState]
 	Function bool Instance:isDescendantOf(Instance ancestor) [Deprecated]
 	Function void Instance:remove() [Deprecated]
 	Event Instance.AncestryChanged(Instance child, Instance parent)

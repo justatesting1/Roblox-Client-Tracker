@@ -55,8 +55,14 @@ local withTheme = Theming.withTheme
 
 local DropdownMenu = require(Library.Components.DropdownMenu)
 local RoundFrame = require(Library.Components.RoundFrame)
+local createFitToContent = require(Library.Components.createFitToContent)
 
 local DetailedDropdown = Roact.PureComponent:extend("DetailedDropdown")
+
+local FitToContent = createFitToContent("Frame", "UIListLayout", {
+	SortOrder = Enum.SortOrder.LayoutOrder,
+	Padding = UDim.new(0, TEXT_PADDING),
+})
 
 function DetailedDropdown:init()
 	self.state = {
@@ -124,17 +130,17 @@ function DetailedDropdown:init()
 	end
 end
 
-function DetailedDropdown:createMainTextLabel(key, displayText, displayTextSize, displayTextColor, textPadding, font)
+function DetailedDropdown:createMainTextLabel(key, displayText, displayTextSize, displayTextColor, textPadding, font, height)
 	return Roact.createElement("TextLabel", {
-		Size = UDim2.new(1, 0, 1, 0),
+		Size = UDim2.new(1, 0, 0, height),
 		Font = font,
 		TextSize = displayTextSize,
 		Text = displayText,
 		TextXAlignment = Enum.TextXAlignment.Left,
-		TextYAlignment = Enum.TextYAlignment.Top,
 		TextColor3 = displayTextColor,
 		BackgroundTransparency = 1,
 		TextWrapped = true,
+		LayoutOrder = 0,
 
 		[Roact.Event.MouseEnter] = function()
 			self.onKeyMouseEnter(key)
@@ -144,22 +150,23 @@ function DetailedDropdown:createMainTextLabel(key, displayText, displayTextSize,
 		end,
 	}, {
 		Padding = Roact.createElement("UIPadding", {
+			PaddingTop = UDim.new(0, textPadding),
 			PaddingLeft = UDim.new(0, textPadding),
         }),
 	})
 end
 
-function DetailedDropdown:createDescriptionTextLabel(key, descriptionText, descriptionTextSize, descriptionTextColor, textPadding, font)
+function DetailedDropdown:createDescriptionTextLabel(key, descriptionText, descriptionTextSize, descriptionTextColor, textPadding, font, height)
 	return Roact.createElement("TextLabel", {
-		Size = UDim2.new(1, 0, 1, 0),
+		Size = UDim2.new(1, 0, 0, height),
 		Font = font,
 		TextSize = descriptionTextSize,
 		Text = descriptionText,
 		TextXAlignment = Enum.TextXAlignment.Left,
-		TextYAlignment = Enum.TextYAlignment.Bottom,
 		TextColor3 = descriptionTextColor,
 		BackgroundTransparency = 1,
 		TextWrapped = true,
+		LayoutOrder = 1,
 
 		[Roact.Event.MouseEnter] = function()
 			self.onKeyMouseEnter(key)
@@ -170,7 +177,7 @@ function DetailedDropdown:createDescriptionTextLabel(key, descriptionText, descr
 	}, {
 		Padding = Roact.createElement("UIPadding", {
 			PaddingLeft = UDim.new(0, textPadding),
-
+			PaddingRight = UDim.new(0, textPadding),
         }),
 	})
 end
@@ -301,34 +308,35 @@ function DetailedDropdown:render()
                 		displayTextSize, dropdownTheme.font, Vector2.new(maxWidth, math.huge))
             
             		local descriptionTextBound = TextService:GetTextSize(descriptionText,
-                		descriptionTextSize, dropdownTheme.font, Vector2.new(maxWidth, math.huge))
+						descriptionTextSize, dropdownTheme.font, Vector2.new(maxWidth, math.huge))
+				
 
 					return Roact.createElement("ImageButton", {
-						Size = UDim2.new(0, maxWidth, 0, displayTextBound.Y + descriptionTextBound.Y + textPadding * 3),
-						BackgroundColor3 = isHovered and dropdownTheme.hovered.backgroundColor
-							or dropdownTheme.backgroundColor,
-						BorderSizePixel = 0,
-						LayoutOrder = index,
-						AutoButtonColor = false,
-						[Roact.Event.Activated] = activated,
-					}, {
-						Ribbon = isHovered and showRibbon and Roact.createElement("Frame", {
-							Size = UDim2.new(0, RIBBON_WIDTH, 1, 0),
-							BackgroundColor3 = dropdownTheme.selected.backgroundColor,
+							Size = UDim2.new(0, maxWidth, 0, displayTextBound.Y + descriptionTextBound.Y + textPadding * 2),
+							BackgroundColor3 = isHovered and dropdownTheme.hovered.backgroundColor
+								or dropdownTheme.backgroundColor,
 							BorderSizePixel = 0,
-						}),
+							LayoutOrder = index,
+							AutoButtonColor = false,
+							[Roact.Event.Activated] = activated,
+						}, {
+							Roact.createElement(FitToContent, {
+								LayoutOrder = index,
+								BackgroundTransparency = 1,
+							} , {
+								Ribbon = isHovered and showRibbon and Roact.createElement("Frame", {
+									Size = UDim2.new(0, RIBBON_WIDTH, 1, 0),
+									BackgroundColor3 = dropdownTheme.selected.backgroundColor,
+									BorderSizePixel = 0,
+								}),
 
-						Padding = Roact.createElement("UIPadding", {
-							PaddingTop = UDim.new(0, textPadding),
-							PaddingBottom = UDim.new(0, textPadding),
-						}),
-
-                        MainTextLabel = self:createMainTextLabel(key, displayText, displayTextSize, displayTextColor,
-							textPadding, dropdownTheme.font),
-						
-						DescriptionTextLabel = self:createDescriptionTextLabel(key, descriptionText, descriptionTextSize, descriptionTextColor,
-							textPadding, dropdownTheme.font),
-					})
+								MainTextLabel = self:createMainTextLabel(key, displayText, displayTextSize, displayTextColor,
+									textPadding, dropdownTheme.font, displayTextBound.Y),
+								
+								DescriptionTextLabel = self:createDescriptionTextLabel(key, descriptionText, descriptionTextSize, descriptionTextColor,
+									textPadding, dropdownTheme.font, descriptionTextBound.Y),
+							})
+						})
 				end,
 			})
 		})

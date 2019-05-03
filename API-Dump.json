@@ -408,7 +408,10 @@
                         "Category": "Primitive",
                         "Name": "bool"
                     },
-                    "Security": "None"
+                    "Security": "None",
+                    "Tags": [
+                        "CustomLuaState"
+                    ]
                 },
                 {
                     "MemberType": "Function",
@@ -592,7 +595,8 @@
                     },
                     "Security": "None",
                     "Tags": [
-                        "Deprecated"
+                        "Deprecated",
+                        "CustomLuaState"
                     ]
                 },
                 {

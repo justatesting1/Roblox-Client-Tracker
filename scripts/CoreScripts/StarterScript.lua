@@ -15,7 +15,7 @@ local FlagSettings = require(CoreGuiModules.FlagSettings)
 local FFlagConnectionScriptEnabled = settings():GetFFlag("ConnectionScriptEnabled")
 local FFlagUseRoactPurchasePrompt375 = settings():GetFFlag("UseRoactPurchasePrompt375")
 local FFlagIWillNotYield = settings():GetFFlag("IWillNotYield")
-local FFlagLuaInviteModalEnabled = settings():GetFFlag("LuaInviteModalEnabledV381")
+local FFlagLuaInviteModalEnabled = settings():GetFFlag("LuaInviteModalEnabledV384")
 local FFlagChinaLicensingApp = settings():GetFFlag("ChinaLicensingApp")
 
 local FFlagUseRoactPlayerList = settings():GetFFlag("UseRoactPlayerList")
