@@ -2425,7 +2425,7 @@ Class DataModel : ServiceProvider [NotCreatable]
 	Property int64 DataModel.CreatorId  [ReadOnly] [NotReplicated]
 	Property Enum<CreatorType> DataModel.CreatorType  [ReadOnly] [NotReplicated]
 	Property int64 DataModel.GameId  [ReadOnly] [NotReplicated]
-	Property Enum<GearGenreSetting> DataModel.GearGenreSetting  [ReadOnly] [NotReplicated]
+	Property Enum<GearGenreSetting> DataModel.GearGenreSetting  [ReadOnly] [NotReplicated] [Deprecated]
 	Property Enum<Genre> DataModel.Genre  [ReadOnly] [NotReplicated]
 	Property int64 DataModel.PlaceId  [ReadOnly] [NotReplicated]
 	Property int DataModel.PlaceVersion  [ReadOnly] [NotReplicated]
@@ -2443,7 +2443,7 @@ Class DataModel : ServiceProvider [NotCreatable]
 	Function bool DataModel:GetRemoteBuildMode() [Deprecated]
 	Function string DataModel:HttpGetAsync(string url, Enum<HttpRequestType> httpRequestType = "Default", bool doNotAllowDiabolicalMode = false) {RobloxScriptSecurity} [Yields]
 	Function string DataModel:HttpPostAsync(string url, string data, string contentType = "*/*", Enum<HttpRequestType> httpRequestType = "Default", bool doNotAllowDiabolicalMode = false) {RobloxScriptSecurity} [Yields]
-	Function bool DataModel:IsGearTypeAllowed(Enum<GearType> gearType)
+	Function bool DataModel:IsGearTypeAllowed(Enum<GearType> gearType) [Deprecated]
 	Function bool DataModel:IsLoaded()
 	Function void DataModel:Load(Content url) {LocalUserSecurity}
 	Function void DataModel:OpenScreenshotsFolder() {RobloxScriptSecurity}
@@ -3664,16 +3664,16 @@ Enum GameAvatarType
 Enum GearGenreSetting [Deprecated]
 	EnumItem GearGenreSetting.AllGenres : 0 [Deprecated]
 	EnumItem GearGenreSetting.MatchingGenreOnly : 1 [Deprecated]
-Enum GearType
-	EnumItem GearType.MeleeWeapons : 0
-	EnumItem GearType.RangedWeapons : 1
-	EnumItem GearType.Explosives : 2
-	EnumItem GearType.PowerUps : 3
-	EnumItem GearType.NavigationEnhancers : 4
-	EnumItem GearType.MusicalInstruments : 5
-	EnumItem GearType.SocialItems : 6
-	EnumItem GearType.BuildingTools : 7
-	EnumItem GearType.Transport : 8
+Enum GearType [Deprecated]
+	EnumItem GearType.MeleeWeapons : 0 [Deprecated]
+	EnumItem GearType.RangedWeapons : 1 [Deprecated]
+	EnumItem GearType.Explosives : 2 [Deprecated]
+	EnumItem GearType.PowerUps : 3 [Deprecated]
+	EnumItem GearType.NavigationEnhancers : 4 [Deprecated]
+	EnumItem GearType.MusicalInstruments : 5 [Deprecated]
+	EnumItem GearType.SocialItems : 6 [Deprecated]
+	EnumItem GearType.BuildingTools : 7 [Deprecated]
+	EnumItem GearType.Transport : 8 [Deprecated]
 Enum Genre [Deprecated]
 	EnumItem Genre.All : 0 [Deprecated]
 	EnumItem Genre.TownAndCity : 1 [Deprecated]

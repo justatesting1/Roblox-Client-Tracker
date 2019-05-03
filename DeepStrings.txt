@@ -975,7 +975,6 @@ AvatarEditorAnthroSlidersUIOnly
 AvatarEditorCatalogRecommended
 AvatarEditorCostumeSignalR
 AvatarEditorCurrentlyWearingPersistenceLogic
-AvatarEditorDefaultTabSelection
 AvatarEditorEmotesAnalytics
 AvatarEditorEmotesSupport
 AvatarEditorEnableThemes2
@@ -985,7 +984,6 @@ AvatarEditorGothamFont
 AvatarEditorHideSliderHighlightOnInit
 AvatarEditorKeepYourColor
 AvatarEditorPageLoaded
-AvatarEditorRecomputeCameraLookAt
 AvatarEditorRefactorPageType
 AvatarEditorRemoveDefaultClothingMessage
 AvatarEditorRTranslations
@@ -6495,7 +6493,6 @@ EmulatorMainWidget
 EmulatorMessageWidget
 EmulatorToggleAction
 EmulatorToggleVerb
-EnableAEAndroidBackButton
 EnableAssetPreviewDynamicVote
 EnableAutomaticScalingEnabled
 EnableBetaFeature
@@ -7105,7 +7102,7 @@ FixGameDetailsNavigation
 FixHandlesMouseEvents
 FixHeadScales
 FixHttpAsyncCast
-FixHumanoidClientPartReplication
+FixHumanoidClientPartReplication1
 FixIAdornableCollectorCrash3
 FixJointCollisions
 FixJumpUpWhenStopSlopeClimb
@@ -7755,7 +7752,6 @@ GetDataStore
 GetDebuggers
 GetDebugId
 GetDebugMessageLogARB
-GetDefaultClothesFromWeb
 GetDescendants
 GetDescriptorSetLayoutSupport
 GetDescriptorSetLayoutSupportKHR
@@ -14395,7 +14391,6 @@ ReportTeamTestFailurePermyriad
 ReportTeleportMethodAnalytics_
 ReportTimeoutStatistics2
 ReportTimeToPlay
-ReportToDiagByCountryCodeUsesRequestType
 ReportTriangleMeshPartMigrationData
 ReportTriangleMeshPartMigrationThreshold0
 ReportTriangleMeshPartMigrationThreshold1
@@ -15932,7 +15927,6 @@ SoundChannel
 SoundCheckResult
 SoundDefault
 SoundEffect
-SoundFixBindingForGetRecordingDevice
 Soundgroup
 SoundGroup
 SoundJobStudio
@@ -17008,6 +17002,9 @@ TextScraperClientMessageWithPlayerSignal
 TextScraperClientTypewriterDelayMSecs
 TextScraperCrashOnNullStringMapFix
 TextScraperListener
+TextScraperReportPlaceVersion
+TextScraperReportUserId
+TextScraperReportUserIdSize
 TextScraperServerDataMSecs
 TextScraperServerDataNBytes
 TextScraperServerDataQSize
@@ -17955,7 +17952,6 @@ UseLuaUniversalApp383
 UseMatrix3ForInertiaTensor2
 UseMomentumThinning
 UseNativePathWaypoint
-UseNewAELoadTimeMetrics
 UseNewAppBridgeXbone2
 UseNewErrorStrings
 UseNewNativeFontPath2
@@ -18040,6 +18036,7 @@ USERPROFILE
 UserSettings
 UserStorageService
 UserStyleSheetUrl
+UserThirdGamepadZoomStep
 UserThumbnailAsync
 UserThumbstickFrameIsActuallyFrame
 UserToken_
