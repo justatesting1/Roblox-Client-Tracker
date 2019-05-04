@@ -1650,6 +1650,7 @@ Class NetworkSettings : Instance [notbrowsable]
 	Property bool NetworkSettings.UsePhysicsPacketCache
 Class NotificationService : Instance [notCreatable]
 	Property bool NotificationService.IsLuaBottomBarEnabled [readonly] [RobloxScriptSecurity]
+	Property bool NotificationService.IsLuaBottomBarWithText [readonly] [RobloxScriptSecurity]
 	Property bool NotificationService.IsLuaChatEnabled [readonly] [RobloxScriptSecurity]
 	Property bool NotificationService.IsLuaGameDetailsEnabled [readonly] [RobloxScriptSecurity]
 	Property bool NotificationService.IsLuaGamesPageEnabled [readonly] [RobloxScriptSecurity]

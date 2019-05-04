@@ -28590,6 +28590,27 @@
                 {
                     "Category": "Behavior",
                     "MemberType": "Property",
+                    "Name": "IsLuaBottomBarWithText",
+                    "Security": {
+                        "Read": "RobloxScriptSecurity",
+                        "Write": "RobloxScriptSecurity"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "Tags": [
+                        "ReadOnly",
+                        "NotReplicated"
+                    ],
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    }
+                },
+                {
+                    "Category": "Behavior",
+                    "MemberType": "Property",
                     "Name": "IsLuaChatEnabled",
                     "Security": {
                         "Read": "RobloxScriptSecurity",

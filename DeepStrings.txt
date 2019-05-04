@@ -9325,6 +9325,7 @@ IsHighlightedAsError
 IsHighlightedByDebugger
 IsImageModelAssetUploadEnabled
 IsLuaBottomBarEnabled
+IsLuaBottomBarWithText
 IsLuaChatEnabled
 IsLuaGameDetailsEnabled
 IsLuaGamesPageEnabled

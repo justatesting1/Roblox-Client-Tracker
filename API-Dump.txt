@@ -1661,6 +1661,7 @@ Class NetworkSettings : Instance [Service] [NotBrowsable]
 	Property string NetworkSettings.ProxyURL
 Class NotificationService : Instance [NotCreatable] [Service]
 	Property bool NotificationService.IsLuaBottomBarEnabled {RobloxScriptSecurity} [ReadOnly] [NotReplicated]
+	Property bool NotificationService.IsLuaBottomBarWithText {RobloxScriptSecurity} [ReadOnly] [NotReplicated]
 	Property bool NotificationService.IsLuaChatEnabled {RobloxScriptSecurity} [ReadOnly] [NotReplicated]
 	Property bool NotificationService.IsLuaGameDetailsEnabled {RobloxScriptSecurity} [ReadOnly] [NotReplicated]
 	Property bool NotificationService.IsLuaGamesPageEnabled {RobloxScriptSecurity} [ReadOnly] [NotReplicated]
