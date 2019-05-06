@@ -7078,6 +7078,7 @@ FixBallRaycasts
 FixBindToClose
 FixBoundSocket
 FixButtonR2MouseClickOnGui
+FixCalculateSpawnLocationIssue
 FixCharacterAppearanceLoadedEvent2
 FixCharacterAppearanceLoadedEvent3
 FixCharacterJitterDownStairs
@@ -7150,7 +7151,7 @@ FixSplitByEmptyString
 FixSteepSlopeSliding
 FixStudioMacNetworkUnitTests
 FixStudioPluginHostAccess
-FixStudioTimeoutCallback
+FixStudioTimeoutCallback2
 FixSurfaceGuisBreakingAfterRespawn
 FixTakeDamagedFireHealthChanged
 FixTerrainAnisoVoxelisation
@@ -12832,6 +12833,7 @@ ProductPurchaseDecision
 ProductPurchasePrompted
 ProductSettings
 ProExtraLightStraight
+ProfileAvoidRecordingEmptyFrames
 ProfileData
 ProfileEnter
 ProfileFps
@@ -14165,6 +14167,7 @@ RemoveAccessories
 RemoveAllClicked
 RemoveAsync
 RemoveButtonClicked
+RemoveCalculateNextSpawnLocation
 RemoveCenterDialog
 RemoveCharacter
 RemoveClicked
@@ -16488,6 +16491,7 @@ StudioOpenPlace
 StudioPackageConvert
 StudioPackageConvert_Failure
 StudioPackageErrorAnalytics
+StudioPackageFixModifiedPackageOnOpening
 StudioPackageMassUpdate
 StudioPackagePublish
 StudioPackagePublish_Failure
@@ -16520,7 +16524,7 @@ StudioRemoveToolboxScrollingFrameHack
 StudioRenameLocalAssetToFile
 StudioReport64bitTagForCrashDumpAttributeFile
 StudioReportAllApplicationLocationsOnCrash
-StudioReportLoginInternalServerError
+StudioReportLoginInternalServerErrorV2
 StudioReportPublishToDifferentGame
 StudioResendDisconnectNotificationInterval
 StudioResizeActingPrettyWhackYoLetUsFixThatWeirdRotatedCtrlResi
@@ -17214,6 +17218,7 @@ ToggleGameAudio
 ToggleGridMaterial
 ToggleGroup
 ToggleGroupColors
+ToggleLocalAxisWorksWithAttachments
 ToggleLocalSpace
 ToggleLocalSpaceVerb
 ToggleRecording
@@ -17961,7 +17966,6 @@ UseLuaUniversalApp383
 UseMatrix3ForInertiaTensor2
 UseMomentumThinning
 UseNativePathWaypoint
-UseNewAppBridgeXbone2
 UseNewErrorStrings
 UseNewNativeFontPath2
 UseNewSpatialHash3
@@ -17998,6 +18002,7 @@ UserDataResult
 UserDataStoreService
 UserDialog
 UserEmotesEnabled
+UserFixChatMessageLogPerformance4
 UserFixClickToMoveWithACM
 UserFixMovementCameraStraightDown
 UserFriends
