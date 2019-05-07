@@ -602,6 +602,7 @@ RBX
 	AssemblyStage
 	AssetFetchMediator
 	AssetService
+	AsyncContactStepTask
 	AsyncHttpQueue
 	Attachment
 	AttachmentDraggerTool
