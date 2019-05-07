@@ -810,8 +810,6 @@ AutocompleteException
 AutocompleteFrame
 AutocompleteMenu
 AutocompleteMetadata
-AutocompleteRefactorAssertFix
-AutocompleteRefactorCheckScriptCreatable
 AutocompleteRefactorCompleteLocalsInTheirDefinition
 AutocompleteRefactorDeclarationSearchRange
 AutocompleteTextReplace
@@ -4845,12 +4843,12 @@ CrashUploadError
 CrashUploadErrorInfluxHundredthsPercentage
 CrashUploadHttpResponseDefaultTimeoutMillis
 CrashUploadMaxDumpFiles
+CrashUploadToBacktraceBaseUrl
 CrashUploadToBacktraceBlackholeToken
 CrashUploadToBacktraceLinuxRCCToken
 CrashUploadToBacktraceMacPlayerToken
 CrashUploadToBacktraceMacStudioToken
 CrashUploadToBacktracePercentage
-CrashUploadToBacktraceToBacktraceBaseUrl
 CrashUploadToBacktraceWindowsPlayerToken
 CrashUploadToBacktraceWindowsRCCToken
 CrashUploadToBacktraceWindowsStudioToken
@@ -12766,7 +12764,6 @@ PreserveAspectFit
 PressedImage
 PressEvent
 PressStart2P
-PreventCommandLineRaceCondition
 PreventInfiniteRecursionRootInterpolation
 PreventParentingPreposterousPoses
 PreventReturnOfElevatedPhysicsFPS
@@ -14488,6 +14485,7 @@ ResetScriptZoom
 ResetSettingsText
 ResetSettingsTitle
 ResetsFontSize
+ResetTextboxBlinkTimerOnInput
 ResetWaypoints
 ResetWidgetToolbarPos
 ResizeableFaces
@@ -15819,6 +15817,7 @@ SizeToTwoAction
 SizingMode
 SkateboardController
 SkateboardPlatform
+SkateboardPlatformRemoveUselessMotorSearch
 SkipLQNeonWhenOff
 SkylightRGBA
 SkyNoTranslateVS
@@ -16279,7 +16278,6 @@ Studio_Tutorials_Landing
 Studio_Tutorials_Test
 Studio17787CrashFix
 Studio17799CrashFix
-StudioAboutDialogShow64Bitness
 StudioABTestFramework
 StudioABTests
 StudioAccessToApisAllowed
